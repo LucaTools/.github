@@ -11,7 +11,7 @@
 
 ---
 
-Luca helps developers install, manage, and activate specific versions of CLI tools inside their projects — without polluting the global PATH. There is no central registry: tools are installed directly from GitHub Releases or any URL, pinned in a simple YAML file (`Lucafile`), and symlinked into `.luca/active/` inside your project.
+Luca helps developers install, manage, and activate specific versions of CLI tools inside their projects — without polluting the global PATH. There is no central registry: tools are installed directly from GitHub Releases or any URL, pinned in a simple YAML file (`Lucafile`), and symlinked into `.luca/tools/` inside your project.
 
 ## Install
 
