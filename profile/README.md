@@ -1,7 +1,7 @@
 <div align="center">
   <img src="https://luca.tools/images/luca-logo-alt.svg" alt="Luca" height="80">
 
-  <h3>A minimalistic, lightweight, decentralised tool and skill manager<br>for macOS and Linux</h3>
+  <h3>A minimalistic, lightweight, decentralised tool and skill manager<br>with a built-in pipeline runner for macOS and Linux</h3>
 
   [![License](https://img.shields.io/badge/License-Apache%202.0-green.svg)](https://github.com/LucaTools/Luca/blob/main/LICENSE)
   [![Swift](https://img.shields.io/badge/Swift-5.7+-orange.svg)](https://swift.org)
@@ -14,6 +14,8 @@
 Luca helps developers install, manage, and activate specific versions of CLI tools inside their projects — without polluting the global PATH. There is no central registry: tools are installed directly from GitHub Releases or any URL, pinned in a simple YAML file (`Lucafile`), and symlinked into `.luca/tools/` inside your project.
 
 Luca also manages **agentic skills** for AI coding agents. Skills are Markdown files with YAML frontmatter, installed from any Git repository and symlinked into agent-specific directories (e.g. `.claude/skills/`). Supports 40+ agents out of the box — Claude Code, Cursor, GitHub Copilot, Windsurf, and more.
+
+Luca includes a **built-in pipeline runner** (`luca run`) for defining and executing ordered sequences of shell tasks from a YAML file. Pipelines support parameters with defaults, `when:` conditions, env files, dry-run previews, and per-task error handling.
 
 ## Install
 
